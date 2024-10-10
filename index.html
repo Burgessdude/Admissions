@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Navigation Example</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.min.css">
+
+<!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<div id="headerWrapper">
+	<header id="top">
+        <img src="images/logo45.png" alt="site logo" width="100"
+        srcset="images/logo45.png 1x, images/logo50.png 2x, images/logo75.png 3x">		<span>Greg's Garage University</span>
+        <a href="#navlinks">&#9776;</a>
+	</header>
+</div><!-- end header wrapper -->
+
+    
+    
+<div id="navWrapper">
+    <nav id="navlinks">
+        <a href="#top">&#10005</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Faculty</a></li>
+            <li class="active"><a href="#">Apply</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Students</a></li>
+        </ul>
+    </nav>
+</div> <!-- end nav wrapper -->
+
+<div id="mainWrapper">
+    <main>
+
+        <h1>Apply</h1>
+     
+        <p>Hello fill out this form thanks!</p>
+        <form method="GET" action="thanks.html" class="my-form" autocomplete="on">
+            <h3>Personal Information</h3>
+            <label>First Name: <input type="text" name="fname" autocomplete="given-name" required title="First Name Here"></label>
+            <label>Last Name: <input type="text" name="lname" autocomplete="family-name" required title="Last Name Here"></label>
+            <label>Email: <input type="email" name="email" autocomplete="email" required title="Your Email Please"></label>
+            <label>Cell Phone: <input type="tel" name="phone" autocomplete="tel" required title="Cell Phone Here"></label>
+            
+            <label>Address: <input type="text" name="address" autocomplete="address-level1" title="Your Address Here"></label>
+            <label>City: <input type="text" name="city" autocomplete="address-level2" title="Your City Here"></label>
+            <label>State: <input type="text" name="state" autocomplete="address-level4" title="Your State Here"></label>
+            <label>Zip: <input type="text" name="zipcode" title="Zip Code Here"></label>
+            
+            <h3>School Type</h3>
+            <label>
+                <select name="condition">
+                    <option value="No Selection Made">Please Select</option>
+                    <option value="highschool">High School</option>
+                    <option value="somecollege">Some College</option>
+                    <option value="graduate">Graduated</option>
+                </select>
+            </label>
+
+            <h3>Education Completed</h3>
+            <label><input type="checkbox" name="GED"> GED </label>
+            <label><input type="checkbox" name="High School"> High School Diploma </label>
+            <label><input type="checkbox" name="Associates"> Two Year Associates Degree </label>
+
+            <h3>Communication Preferences</h3>
+            <label><input type="radio" name="contact" value="email"> Email</label>
+            <label><input type="radio" name="contact" value="text"> Text</label>
+            <label><input type="radio" name="contact" value="call"> Call</label>
+
+            <h3>Account Information</h3>
+            <label>Username (5-10 letters)<input type="text" required pattern="[A-Za-z]{5,10}"  title="Please enter a UserName that is at least 6 characters long"></label>
+            <label> Password (At least 6 characters)<input type="password" name="password" required minlength="6" title="5-9 letters or numbers"></label>
+
+            <input type="submit" value="Send my Application">
+        </form>
+    </main>
+</div><!-- end main wrapper -->
+    
+<div id="footerWrapper">
+    <footer>
+        <p>&copy;  2024 &bull; Jacob Burgess </p>
+    </footer>
+</div> <!-- end footer wrapper -->
+   
+</body>
+</html> 
